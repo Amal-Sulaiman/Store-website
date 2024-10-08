@@ -22,3 +22,5 @@ The program should allow the user to perform the following actions:
 - Allow users to specify and edit the quantity of each item.
 - Ensure the prices are formatted to two decimal places when displaying them.
 
+![My Image](store.png)
+
