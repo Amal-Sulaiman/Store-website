@@ -23,41 +23,41 @@ let products = [
     {
         id: 1,
         name: 'مصحف مجمع الملك فهد مقاس ثمن',
-        image: 'img/image.jpeg',
+        image: 'image.jpeg',
         price:27.99
 
     },
     {
         id: 2,
         name: 'العشر الاخير من مصحف المدينة',
-        image: 'img/image2.jpg',
+        image: 'image2.jpg',
         price:13.95
 
     },
     {
         id: 3,
         name:'تجويد القرآن الكريم أسود 17×24',
-        image: 'img/image3.jpg',
+        image: 'image3.jpg',
         price:37.90
 
     },
     {
         id: 4,
         name: 'ربع يس من مصحف المدينة',
-        image: 'img/image4.jpg',
+        image: 'image4.jpg',
         price:20.85
 
     },
     {
         id: 5,
         name: 'مصحف مجمع الملك فهد مقاس ثمن',
-        image: 'img/image5.jpg',
+        image: 'image5.jpg',
         price:32.50
 
     },{
         id: 6,
         name: 'مصحف القرآن الكريم ',
-        image: 'img/image6.jpg',
+        image: 'image6.jpg',
         price:23.99
 
     },
@@ -113,7 +113,7 @@ function reloadCard() {
             newDiv.innerHTML = `
                 <div><img src="${value.image}" /></div>
                 <div>${value.name}</div>
-                <div>ر.س${value.price}</div>
+                <div>ر.س${value.price * value.quantity}</div>
                 <div>
                
                 <button class="delete" onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
